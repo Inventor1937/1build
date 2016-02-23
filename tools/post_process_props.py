@@ -14,7 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import os, sys
+from six import iteritems
+import sys
 
 # Usage: post_process_props.py file.prop [blacklist_key, ...]
 # Blacklisted keys are removed from the property file, if present
@@ -64,7 +65,7 @@ def validate(prop):
   """
   check_pass = True
   buildprops = prop.to_dict()
-  for key, value in buildprops.iteritems():
+  for key, value in iteritems(buildprops):
     # Check build properties' length.
     if len(key) > PROP_NAME_MAX:
       check_pass = False
