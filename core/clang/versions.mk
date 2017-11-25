@@ -8,6 +8,6 @@ RS_LLVM_PREBUILTS_BASE := prebuilts/clang/host
 
 ## SDCLANG
 SDCLANG := true
-SDCLANG_PATH := vendor/qcom/sdclang-3.8/linux-x86/bin
+SDCLANG_PATH := vendor/qcom/sdclang-4.0/linux-x86/bin
 SDCLANG_LTO_DEFS := build/core/sdllvm-lto-defs.mk
 SDCLANG_COMMON_FLAGS := -O3 -fvectorize-loops
