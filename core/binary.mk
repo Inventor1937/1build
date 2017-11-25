@@ -264,9 +264,7 @@ my_cppflags := $(my_cpp_std_version) $(my_cppflags)
 
 ifeq ($(SDCLANG),true)
     ifeq ($(my_sdclang),)
-        ifeq ($(TARGET_USE_SDCLANG),true)
-            my_sdclang := true
-        endif
+        my_sdclang := true
     endif
 endif
 
